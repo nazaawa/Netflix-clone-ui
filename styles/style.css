@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -6,15 +10,14 @@ body {
   color: white;
   font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* l'entete de la page 
+/* l'entete de la pag height: 600px;e 
 la premiere section
 */
 
 #section1 {
-  height: 500px;
-  background: url("../images/back1.jpg");
-  box-sizing: border-box;
-  background-size: cover;
+  height: 700px;
+  background: linear-gradient(rgba(3, 3, 3, 0.672), rgba(22, 22, 22, 0.72)),
+    center center / cover url("../images/back1.jpg");
 }
 
 header {
@@ -23,43 +26,49 @@ header {
   margin: 0 50px;
 }
 header #signin {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 #logo img {
-  width: 120px;
-  height: 50px;
+  width: 170px;
+  height: 100px;
 }
 
 #signin a {
-  font-weight: bold;
-  padding: 5px 10px;
+  padding: 5px 15px;
   background: red;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 2px;
   color: white;
+  font-size: 20px;
 }
+/*  le contenu de la premiere section */
 article {
-  margin-top: 100px;
+  margin-top: 125px;
   text-align: center;
 }
 article h1 {
-  font-size: 30px;
+  font-size: 50px;
+
   margin: 0;
   padding: 0;
 }
 article h3 {
   font-size: 20px;
 }
+
 article input {
-  padding: 15px;
-  width: 350px;
+  padding: 20px;
+  width: 450px;
+  outline: none;
 }
 #p1 p {
-  font-size: 25px;
+  font-size: 30px;
 }
 article label {
   background-color: red;
-  padding: 15px 20px;
+  padding: 18.5px 50px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*la deuxieme section de la page */
@@ -75,17 +84,76 @@ article label {
   margin-top: 100px;
   text-align: left;
   font-size: 25px;
-  font-weight:bold;
- 
+  font-weight: bold;
 }
 #container2 img {
   position: relative;
   z-index: 1;
 }
 #video {
-
   position: absolute;
-  margin-top:-390px;
-  margin-left : 80px;
+  margin-top: -390px;
+  margin-left: 80px;
+}
 
+#section3 {
+  margin-top: 10px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+
+#section3 #container2 {
+  width: 400px;
+  text-align: left;
+  font-size: 20px;
+
+  margin-top: 150px;
+}
+
+#section4 {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  height: 200px;
+  padding-left: 50px;
+  font-size: 20px;
+}
+
+#section5 {
+  margin-top: 10px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+#section6 {
+  margin-top: 10px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+#section6 #container2 {
+display: flex;
+
+flex-direction: column;
+align-items: center;
+}
+
+#section6 #container2 #souscontainer {
+  width: 550px;
+
+  display: flex;
+  justify-content: space-around;
+  background: grey;
+  border: 1px solid black;
+ 
+}
+#section6 #container2 #souscontainer p{
+  font-size:20px;
+  font-weight:bold;
 }
