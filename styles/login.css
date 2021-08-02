@@ -1,0 +1,4 @@
+body {
+    background: linear-gradient(rgba(3, 3, 3, 0.672), rgba(22, 22, 22, 0.72)),
+    center center / cover url("../images/back1.jpg");
+}
