@@ -1,4 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
 body {
-    background: linear-gradient(rgba(3, 3, 3, 0.672), rgba(22, 22, 22, 0.72)),
+  background: linear-gradient(rgba(3, 3, 3, 0.672), rgba(22, 22, 22, 0.72)),
     center center / cover url("../images/back1.jpg");
+}
+
+header img {
+  width: 170px;
+  height: 100px;
+}
+#article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article {
+    padding: 50px;
+  width: 300px;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
